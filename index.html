@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KCPSA</title>
+	<link rel="stylesheet" type="text/css" href="KCPSAS.css">
+	<div class="topnav">
+	<a class="active"
+	href="#Home">HOME</a>
+	<a href="ABOUT US.html">ABOUT</a>
+	<a href="#Contact">CONTACT</a>
+	  <input type="text" placeholder="Search..">
+</div>
+</head>
+<body>
+<img align="left" src="kcpsa logo.png" alt="KCPSA LOGO" style=width:100px; height:100px;>
+<img align="right" src="coat-of-arms.jpg" alt="Coat of arms" style=width:100px; height:100px;>
+<h1>KIBAALE COMMUNITY PRIMARY SCHOOL ALUMNI</h1>
+<h3>QUALITY NEVER FADES</h3>
+<h4>kibaalecommunityprimaryschoolalumni@gmail.com</h4>
+<h8><center>WELCOME TO THE OFFICIAL WEBSITE OF KCPSA</h8></center>
+<center><h5>HAPPENING AROUND US; OUR SCHOOL, PEOPLE AND THEIR STORIES</h5></center>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+</style>
+<body>
+
+<div class="container">
+  <div class="mySlides">
+    <img src="pa.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="lastone.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="David.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="Masa.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="sh.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="mariam.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="pa.jpg" style="width:100%" onclick="currentSlide(1)" alt="Alumni Come Together Party Scheduled for 21st June 2024 at our school, Come one Come All">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lastone.jpg" style="width:100%" onclick="currentSlide(2)" alt="One of the Alumni, Isiko Lastone looking smart in our Alumni Tshirt">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="David.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mr David Samanya, Coordinator">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Masa.jpg" style="width:100%" onclick="currentSlide(4)" alt="Mr Massa Innocent, Coordinator">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sh.jpg" style="width:100%" onclick="currentSlide(5)" alt="Mrs Namusabi Shamirah, Coordinator">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="mariam.jpg" style="width:100%" onclick="currentSlide(6)" alt="Mrs Nantale Mariam, Pioneer Member">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+  
+ 
+ </body>
+
+</body>
+</html>
+<footer>
+<center><p>Contact information</p>
+<p><b>Email:</b>kibaalecommunityprimaryschoolalumni@gmail.com</p>
+<P>P.O BOX 179 Busembatia</P>
+<p><b>Tel:</b>+256773992871/+256756220403</h6></p>
+<p>Visit Us @ Our School, Kibaale-Namutumba district.</p></center>
+<h7>Follow us on</h7>
+<img src="x.png" alt="x" 
+style="width: 50px; height: 50px" align="center">
+<img src="ema.png" alt="email"
+style="width: 50px; height: 50px" align="center">
+<img src="fb.png" alt="Facebook" 
+Style="width: 50px; height: 50px" align="center">
+<img src="link.png" alt="linkedin" 
+Style="width: 50px; height: 50px" align="center">
+<img src="whatsapp.png" alt="whatsapp" 
+Style="width: 50px; height: 50px" align="center">
+<img src="call.png" alt="call" 
+Style="width: 50px; height: 50px" align="center">
+
+
+
+<P><center><h6 stye="font-family:century">Copyright@2024KCPSA</P></h6></center>
+</footer>
